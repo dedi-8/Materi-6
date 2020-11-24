@@ -2,7 +2,6 @@
 
 namespace App;
 
-
-class  Client Extends Model{
+class Customer extends Model{
 	protected $table = 'produk';
 }

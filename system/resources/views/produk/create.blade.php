@@ -47,7 +47,7 @@
 						<textarea name="deskripsi" class="form-control"></textarea>
 					</div>
 					
-					<button class="btn btn-dark float-right"><i class="fa fa-save"> simpan</i></button>
+					<button class="btn btn-dark float-right"><i class="fa fa-save">simpan</i></button>
 					</form>
 					</div>
 				</div>

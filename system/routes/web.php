@@ -10,6 +10,7 @@ use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\PromoController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DaftarController;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,12 +66,9 @@ Route::prefix('admin')->middleware('auth')->group(function(){
 		Route::delete('user/{user}',[UserController:: class, 'destroy']);
 	});
 
-Route::prefix('client')->middleware('auth')->group(function(){
-		Route::post('produk/filter', [CLientController:: class, 'filter']);
-		Route::get('produk',[CLientController:: class,'index']);
-		Route::post('produk',[CLientController:: class,'store']);
-		Route::get('produk/{produk}',[CLientController:: class, 'show']);
-	});
+Route::get('/', [ClientController:: class, 'home']);
+Route::post('home/filter', [ClientController:: class, 'filter']);
+Route::get('produk/{produk}', [ClientController:: class, 'show']);
 
 
 Route::get('kategory',[KategoryController:: class,'index']);
