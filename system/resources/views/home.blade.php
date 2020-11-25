@@ -43,8 +43,8 @@
                   <td style="width: 800px">
                      <div class="row">
                             @foreach($list_produk as $data)
-                        <div class=" col-lg-3 ftco-animate">
-                          <div class="product">
+                        <div class=" col-lg-3 ftco-animate ">
+                          <div class="">
                               <div class="overlay"></div>
                             </a>
                             <div class="card text py-4 pb-4 px-4 text-center">
