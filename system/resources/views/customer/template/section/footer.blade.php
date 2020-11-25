@@ -1,7 +1,3 @@
-<div class="bg-dark">
-
-</div>
-
   <footer class=" bg-dark">
       <div class="container">
         <div class="row">

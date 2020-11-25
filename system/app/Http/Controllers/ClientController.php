@@ -7,11 +7,11 @@ class ClientController extends Controller
 {
 	function home(){
 		$data['list_produk'] = produk::all();
-		return view('customer.home', $data);
+		return view('home', $data);
 	}
 	function show(Produk $produk){
 		$data['produk'] = $produk;
-		return view('customer.home', $data);
+		return view('home', $data);
 	}
 	function filter(){
 		$nama = request ('nama');
@@ -30,6 +30,6 @@ class ClientController extends Controller
 		$data['nama'] = $nama;
 		$data['stok'] = request('stok');
 
-		return view('customer.home', $data);
+		return view('home', $data);
 	}
 }
